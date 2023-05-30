@@ -2,6 +2,7 @@
 /* eslint: enabled */
 
 Game._quit = function(){Game.WriteSave();window.location.reload()};
+if (parseInt(Game.version) != 2.021) Game._quit();
 if (!confirm("Are thou sure to lose thou sanity?")) Game._quit();
 
 Game.popups=0;
